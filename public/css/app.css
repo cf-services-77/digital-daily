@@ -1,0 +1,27 @@
+.none {
+    display: none;
+}
+
+.v-center {
+    top: 50%;
+    position: relative;
+    transform: translateY(-50%);
+}
+
+@media screen and (min-width: 1000px) {
+    .web {
+        display: block;
+    }
+    .mobile {
+        display: none;
+    }
+}
+
+@media (max-width: 1000px) {
+    .web {
+        display: none;
+    }
+    .mobile {
+        display: block;
+    }
+}

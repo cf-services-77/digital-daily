@@ -1,0 +1,51 @@
+.head-content {
+    width: 100%;
+}
+
+.head {
+    height: 800px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.bg-trans {
+    height: 800px;
+    background-color: rgba(2, 30, 74, 0.5);
+}
+
+@media screen and (min-width: 1400px) {
+    .services {
+        padding: 100px 6%;
+    }
+}
+
+@media (max-width: 1400px) {
+    .services {
+        padding: 0;
+    }
+    .col-sm-6 {
+        width: 100%;
+        margin-top: 100px;
+    }
+}
+
+h1 {
+    color: #08417aff;
+    text-align: center;
+    margin-bottom: 70px;
+}
+
+h1 span {
+    padding: 15px 30px;
+    border-radius: 10px;
+    background-color: rgba(172, 211, 237, 0.2);
+}
+
+.service-item {
+    width: 600px;
+    height: 500px;
+    margin: 0 auto;
+    border-radius: 10px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}

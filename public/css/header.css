@@ -1,0 +1,130 @@
+#header-app {
+    width: 100%;
+    height: 130px;
+    display: flex;
+    position: fixed;
+    justify-content: space-between;
+}
+
+.bg-white {
+    transition: 0.1s;
+}
+
+.logo {
+    margin-left: 50px;
+    height: fit-content;
+}
+
+.items {
+    width: 40%;
+    height: 130px;
+    position: relative;
+}
+
+@media screen and (min-width: 1700px) {
+    .items {
+        width: 40%;
+    }
+}
+
+@media (max-width: 1700px) and (min-width: 1300px) {
+    .items {
+        width: 50%;
+    }
+}
+
+@media screen and (min-width: 1300px) {
+    .header-web {
+        display: block;
+    }
+    .header-mobile {
+        display: none;
+    }
+}
+
+@media (max-width: 1300px) {
+    #header-app {
+        background-color: white;
+    }
+    .header-web {
+        display: none;
+    }
+    .header-mobile {
+        display: block;
+    }
+}
+
+.items ul {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    display: flex;
+    list-style-type: none;
+    justify-content: space-between;
+}
+
+.items li {
+    padding: 15px 30px;
+    border-radius: 10px;
+    background-color: rgba(172, 211, 237, 0.2);
+}
+
+.items-trans li {
+    border: 1px solid rgba(172, 211, 237, 0.1);
+    background-color: rgba(172, 211, 237, 0.1);
+}
+
+.items-trans a {
+    font-size: 27px;
+    text-decoration: none;
+    color: rgba(201, 222, 246, 0.9);
+}
+
+.items-trans a:hover {
+    transition: 0.1s;
+    color: rgba(139, 186, 243, 0.9);
+}
+
+.items-white a {
+    font-size: 27px;
+    text-decoration: none;
+    color: rgba(8, 43, 83, 0.9);
+}
+
+.items-white a:hover {
+    transition: 0.1s;
+    color: rgba(88, 143, 211, 0.9);
+}
+
+.contact {
+    margin-right: 80px;
+    height: fit-content;
+}
+
+.contact a {
+    text-decoration: none;
+}
+
+.contact-trans a {
+    color: rgba(201, 222, 246, 0.9);
+}
+
+.contact-trans a:hover {
+    color: rgba(139, 186, 243, 0.9);
+}
+
+.contact-white a {
+    color: rgba(8, 43, 83, 0.9);
+}
+
+.contact-white a:hover {
+    color: rgba(88, 143, 211, 0.9);
+}
+
+.contact span {
+    font-size: 22px;
+    padding: 15px 30px;
+    border-radius: 40px;
+    border: 2px solid rgba(18, 123, 252, 0.2); 
+    background-color: rgba(18, 123, 252, 0.1);
+}
