@@ -1,10 +1,14 @@
 const logoTrans = document.querySelector('.logo-trans');
 const logoWhite = document.querySelector('.logo-white');
+const dropdown = document.querySelector('.dropdown');
 const header = document.querySelector('#header-app');
 const contact = document.querySelector('.contact');
+const bars = document.querySelector('.fa-bars');
 const items = document.querySelector('.items');
 
 window.addEventListener('scroll', () => {
+    dropdown.classList.add('none');
+
     if (window.scrollY > 0) {
         logoTrans.classList.add('none');
         logoWhite.classList.remove('none');
@@ -23,5 +27,19 @@ window.addEventListener('scroll', () => {
         items.classList.remove('items-white');
         contact.classList.add('contact-trans');
         contact.classList.remove('contact-white');
+    }
+});
+
+bars.addEventListener('click', () => {
+    if (dropdown.classList.contains('none')) {
+        dropdown.classList.remove('none');
+    } else {
+        dropdown.classList.add('none');
+    }
+});
+
+window.addEventListener('click', (e) => {
+    if (!dropdown.contains(e.target) && !bars.contains(e.target)) {
+        dropdown.classList.add('none');
     }
 });
