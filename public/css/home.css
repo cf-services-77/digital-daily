@@ -15,29 +15,35 @@
 }
 
 .trans-content {
-    width: 65%;
     margin: 0 auto;
 }
 
 .title {
-    font-size: 90px;
     text-align: center;
-    color: rgba(250, 250, 250, 0.6);
+    color: rgba(250, 250, 250, 0.7);
 }
 
 p {
-    font-size: 30px;
     margin: 30px 0 0 0;
     text-align: center;
-    color: rgba(250, 250, 250, 0.6);
+    color: rgba(250, 250, 250, 0.7);
 }
 
 @media screen and (min-width: 1400px) {
-    h1 {
+    .trans-content {
+        width: 65%;
+    }
+    .title {
+        font-size: 90px;
+    }
+    p {
+        font-size: 30px;
+    }
+    .services h1 {
         color: #08417aff;
         margin-bottom: 70px;
     }
-    h1 span {
+    .services h1 span {
         padding: 15px 30px;
         background-color: rgba(172, 211, 237, 0.2);
     }
@@ -51,6 +57,15 @@ p {
 }
 
 @media (max-width: 1400px) {
+    .trans-content {
+        width: 80%;
+    }
+    .title {
+        font-size: 100px;
+    }
+    p {
+        font-size: 45px;
+    }
     .services {
         padding: 0;
     }
@@ -58,11 +73,11 @@ p {
         width: 100%;
         margin-top: 150px;
     }
-    h1 {
+    .services h1 {
         margin-bottom: 100px;
     }
-    h1 span {
-        font-size: 60px;
+    .services h1 span {
+        font-size: 55px;
         padding: 30px 60px;
     }
     .service-item {
