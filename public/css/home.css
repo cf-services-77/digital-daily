@@ -53,6 +53,10 @@
     .bg-trans p {
         font-size: 35px;
     }
+    .btn-cmd {
+        font-size: 25px;
+        padding: 8px 15px;
+    }
     .services {
         padding: 100px 6%;
     }
@@ -86,6 +90,10 @@
     }
     .bg-trans p {
         font-size: 45px;
+    }
+    .btn-cmd {
+        font-size: 35px;
+        padding: 10px 20px;
     }
     .services {
         padding: 0 0 150px 0;
