@@ -90,7 +90,7 @@
                 <div class="form bg-white shadow-sm">
                     <form action="#">
                         <div class="form-check form-check-inline" style="margin-right: 100px;">
-                            <input class="form-check-input" type="radio" name="inlineRadioGender" id="inlineRadioMale" value="M">
+                            <input class="form-check-input" type="radio" name="inlineRadioGender" id="inlineRadioMale" value="M" checked>
                             <label class="form-check-label" for="inlineRadioMale">Monsieur</label>
                         </div>
                         <div class="form-check form-check-inline">
@@ -100,27 +100,27 @@
                         <div class="row">
                             <div class="col-sm-6 col-contact">
                                 <div class="form-group">
-                                    <label for="firstname-input">Prénom</label>
+                                    <label for="firstname-input">Prénom <span style="color: red;">*</span></label>
                                     <input type="text" name="firstname" id="firstname-input" class="form-control" placeholder="Prénom" required>
                                 </div>
                             </div>
                             <div class="col-sm-6 col-contact">
                                 <div class="form-group">
-                                    <label for="lastname-input">Nom</label>
+                                    <label for="lastname-input">Nom <span style="color: red;">*</span></label>
                                     <input type="text" name="lastname" id="lastname-input" class="form-control" placeholder="Nom" required>
                                 </div>
                             </div>
                         </div>
                         <div class="form-group">
-                            <label for="email-input">E-mail</label>
+                            <label for="email-input">E-mail <span style="color: red;">*</span></label>
                             <input type="email" name="email" id="email-input" class="form-control" placeholder="E-mail" required>
                         </div>
                         <div class="form-group">
-                            <label for="subject-input">Objet</label>
+                            <label for="subject-input">Objet <span style="color: red;">*</span></label>
                             <input type="text" name="subject" id="subject-input" class="form-control" placeholder="Objet" required>
                         </div>
                         <div class="form-group">
-                            <label for="message-input">Votre demande</label>
+                            <label for="message-input">Votre demande <span style="color: red;">*</span></label>
                             <textarea rows="5" name="message" id="message-input" class="form-control" placeholder="Faites-nous part de votre projet" required></textarea>
                         </div>
                         <div class="form-group">
