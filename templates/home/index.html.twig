@@ -1,6 +1,12 @@
 {% extends 'base/index.html.twig' %}
 {% block title %}DIGITAL Daily{% endblock %}
 {% block body %}
+<style>
+    #myChart {
+      max-width: 400px;
+      margin: auto;
+    }
+  </style>
 <section id="home-app">
     <div class="head-content header-web">
         {% include 'home/head.html.twig' with { screenClass: 'web' } %}
@@ -44,6 +50,7 @@
                 <div class="col-sm-6">
                     <div style="position: relative; height: 100%;">
                         <div class="about-text bg-white shadow-lg v-center">
+                            <canvas id="myChart"></canvas>
                             <h1>Title here please !</h1>
                             <p>
                                 Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
@@ -67,6 +74,59 @@
                             </a>
                         </div>
                     </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="commande" class="contact-container bg-light">
+        <h1>Pnenez contact</h1>
+        <div class="contact-content row">
+            <div class="col-sm-5 col-contact" style="position: relative;">
+                <div class="contact-img v-center">
+                    <img src="images/contact.png">
+                </div>
+            </div>
+            <div class="col-sm-7 col-contact">
+                <div class="form bg-white shadow-sm">
+                    <form action="#">
+                        <div class="form-check form-check-inline" style="margin-right: 100px;">
+                            <input class="form-check-input" type="radio" name="inlineRadioGender" id="inlineRadioMale" value="M">
+                            <label class="form-check-label" for="inlineRadioMale">Monsieur</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="inlineRadioGender" id="inlineRadioFemale" value="F">
+                            <label class="form-check-label" for="inlineRadioFemale">Madame</label>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-6 col-contact">
+                                <div class="form-group">
+                                    <label for="firstname-input">Prénom</label>
+                                    <input type="text" name="firstname" id="firstname-input" class="form-control" placeholder="Prénom" required>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-contact">
+                                <div class="form-group">
+                                    <label for="lastname-input">Nom</label>
+                                    <input type="text" name="lastname" id="lastname-input" class="form-control" placeholder="Nom" required>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="email-input">E-mail</label>
+                            <input type="email" name="email" id="email-input" class="form-control" placeholder="E-mail" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject-input">Objet</label>
+                            <input type="text" name="subject" id="subject-input" class="form-control" placeholder="Objet" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message-input">Votre demande</label>
+                            <textarea rows="5" name="message" id="message-input" class="form-control" placeholder="Faites-nous part de votre projet" required></textarea>
+                        </div>
+                        <div class="form-group">
+                            <button type="submit" class="btn btn-success btn-cmd">Envoyer</button>
+                        </div>
+                    </form>
                 </div>
             </div>
         </div>
