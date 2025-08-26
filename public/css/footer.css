@@ -1,0 +1,94 @@
+#footer-app .content {
+    padding: 100px;
+    background-color: #020c25;
+}
+
+#footer-app .content p {
+    width: 85%;
+    font-size: 30px;
+    color: #caf1fb;
+    margin: 40px 0 20px 10px;
+}
+
+#footer-app button {
+    margin: 10px;
+}
+
+#footer-app .line-footer {
+    width: 100%;
+    border: 2px solid #caf1fb;
+}
+
+#footer-app .bottom {
+    background-color: #010614;
+}
+
+#footer-app .icons {
+    padding: 20px 10px;
+}
+
+#footer-app .icons img {
+    margin-right: 30px;
+}
+
+.references {
+    color: #95a8ad;
+}
+
+.references ul {
+    margin: 0;
+    padding: 30px;
+    list-style-type: none;
+}
+
+.references li {
+    margin-bottom: 10px;
+}
+
+#footer-app .bottom {
+    padding: 30px 0;
+    font-size: 30px;
+    color: #caf1fb;
+}
+
+@media screen and (min-width: 1400px) {
+    .references {
+        padding: 40px 5%;
+    }
+    .references h1 {
+        font-size: 50px;
+    }
+    .references li {
+        font-size: 22px;
+    }
+}
+
+@media (max-width: 1400px) {
+    .text-center-dd {
+        text-align: center !important;
+    }
+    #footer-app .content > .col-sm-6 {
+        width: 100%;
+    }
+    #footer-app .content p {
+        text-align: center;
+        margin: 40px auto 10px auto;
+    }
+    .references {
+        margin-top: 100px;
+    }
+    .references h1 {
+        font-size: 60px;
+        text-align: center;
+    }
+    .references ul {
+        margin: 0 auto;
+        width: fit-content;
+    }
+    .references li {
+        font-size: 30px;
+    }
+    #footer-app .bottom {
+        padding: 30px 0;
+    }
+}
