@@ -41,6 +41,15 @@
     padding: 8px 15px;
 }
 
+.about-text-container {
+    height: 100%;
+    position: relative;
+}
+
+.about .canva {
+    margin-bottom: 50px;
+}
+
 .contact-img {
     width: 400px;
     margin: 0 auto;
@@ -90,6 +99,9 @@
     .about-content {
         padding: 0 6%;
         background-color: #20baf7;
+    }
+    .about-text-container {
+        padding: 50px 0;
     }
     .about-text {
         padding: 50px;
@@ -224,10 +236,6 @@
     padding: 50px 0 0 0;
 }
 
-.about-content {
-    padding-top: 50px;
-}
-
 .about-title {
     color: #08417a;
     width: fit-content;
@@ -239,6 +247,7 @@
 .profile {
     width: 400px;
     margin: 0 auto;
+    padding-top: 50px;
 }
 
 .profile img {

@@ -6,9 +6,7 @@ const contact = document.querySelector('.contact');
 const bars = document.querySelector('.fa-bars');
 const items = document.querySelector('.items');
 
-window.addEventListener('scroll', () => {
-    dropdown.classList.add('none');
-
+const headerOnScroll = () => {
     if (window.scrollY > 0) {
         logoTrans.classList.add('none');
         logoWhite.classList.remove('none');
@@ -28,6 +26,12 @@ window.addEventListener('scroll', () => {
         contact.classList.add('contact-trans');
         contact.classList.remove('contact-white');
     }
+};
+
+headerOnScroll();
+window.addEventListener('scroll', () => {
+    dropdown.classList.add('none');
+    headerOnScroll();
 });
 
 bars.addEventListener('click', () => {

@@ -1,42 +1,41 @@
-const ctx = document.getElementById('myChart');
+window.onload = function () {
 
-    new Chart(ctx, {
-      type: 'pie',
-      data: {
-        labels: ['Rouge', 'Bleu', 'Jaune'],
-        datasets: [{
-          data: [30, 50, 20],
-          backgroundColor: [
-            'rgba(255, 99, 132, 0.7)',
-            'rgba(54, 162, 235, 0.7)',
-            'rgba(255, 206, 86, 0.7)'
-          ],
-          borderColor: [
-            'rgba(255, 99, 132, 1)',
-            'rgba(54, 162, 235, 1)',
-            'rgba(255, 206, 86, 1)'
-          ],
-          borderWidth: 1
+    var chart = new CanvasJS.Chart("chartContainer", {
+        exportEnabled: false,
+        animationEnabled: true,
+        title:{
+            text: "State Operating Funds"
+        },
+        legend:{
+            cursor: "pointer",
+            itemclick: explodePie
+        },
+        data: [{
+            type: "pie",
+            showInLegend: true,
+            toolTipContent: "{name}: <strong>{y}%</strong>",
+            indexLabel: "{name} - {y}%",
+            dataPoints: [
+                { y: 26, name: "School Aid" },
+                { y: 20, name: "Medical Aid" },
+                { y: 5, name: "Debt/Capital" },
+                { y: 3, name: "Elected Officials" },
+                { y: 7, name: "University" },
+                { y: 17, name: "Executive" },
+                { y: 22, name: "Other Local Assistance", exploded: true }
+            ]
         }]
-      },
-      options: {
-        responsive: true,
-        plugins: {
-          legend: {
-            display: true,      // Afficher la légende
-            position: 'bottom', // top, left, right, bottom
-            labels: {
-              color: '#333',
-              font: {
-                size: 14,
-                family: 'Arial'
-              }
-            }
-          },
-          title: {
-            display: true,
-            text: 'Répartition des couleurs'
-          }
-        }
-      }
     });
+
+    chart.render();
+}
+
+function explodePie (e) {
+    if(typeof (e.dataSeries.dataPoints[e.dataPointIndex].exploded) === "undefined" || !e.dataSeries.dataPoints[e.dataPointIndex].exploded) {
+        e.dataSeries.dataPoints[e.dataPointIndex].exploded = true;
+    } else {
+        e.dataSeries.dataPoints[e.dataPointIndex].exploded = false;
+    }
+    
+    e.chart.render();
+}

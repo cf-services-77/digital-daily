@@ -8,6 +8,12 @@
     transform: translateY(-50%);
 }
 
+.v-bottom {
+    top: 100%;
+    position: relative;
+    transform: translateY(-100%);
+}
+
 @media screen and (min-width: 1000px) {
     .web {
         display: block;
