@@ -4,7 +4,7 @@ window.onload = function () {
         exportEnabled: false,
         animationEnabled: true,
         title:{
-            text: "State Operating Funds"
+            text: "Diagramme des skills"
         },
         legend:{
             cursor: "pointer",
@@ -12,17 +12,17 @@ window.onload = function () {
         },
         data: [{
             type: "pie",
-            showInLegend: true,
-            toolTipContent: "{name}: <strong>{y}%</strong>",
-            indexLabel: "{name} - {y}%",
+            showInLegend: false,
+            toolTipContent: "<strong>{y}%</strong>",
+            indexLabel: "{name}",
             dataPoints: [
-                { y: 26, name: "School Aid" },
-                { y: 20, name: "Medical Aid" },
-                { y: 5, name: "Debt/Capital" },
-                { y: 3, name: "Elected Officials" },
-                { y: 7, name: "University" },
-                { y: 17, name: "Executive" },
-                { y: 22, name: "Other Local Assistance", exploded: true }
+                { y: 20, name: "- Développement" },
+                { y: 18, name: "Linux -" },
+                { y: 4, name: "Cloud -" },
+                { y: 8, name: "DevOps -" },
+                { y: 12, name: "Design -" },
+                { y: 17, name: "Agilité -" },
+                { y: 21, name: "- Architecture", exploded: true }
             ]
         }]
     });

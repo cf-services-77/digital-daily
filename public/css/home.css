@@ -47,7 +47,7 @@
 }
 
 .about .canva {
-    margin-bottom: 50px;
+    margin: 30px 0 80px 0;
 }
 
 .contact-img {
@@ -245,7 +245,7 @@
 }
 
 .profile {
-    width: 400px;
+    width: 500px;
     margin: 0 auto;
     padding-top: 50px;
 }
