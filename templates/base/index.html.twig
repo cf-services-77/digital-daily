@@ -5,19 +5,29 @@
         <title>{% block title %}Welcome!{% endblock %}</title>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/products.css">
         <link rel="stylesheet" href="css/header.css">
         <link rel="stylesheet" href="css/footer.css">
+        <link rel="stylesheet" href="css/head.css">
         <link rel="stylesheet" href="css/home.css">
         <link rel="stylesheet" href="css/app.css">
     </head>
     <body>
+        {% set currentPath = path(app.request.attributes.get('_route'), app.request.attributes.get('_route_params')) %}
         {% include 'base/header.html.twig' %}
+        <div class="head-content header-web">
+            {% include 'base/head.html.twig' with { screenClass: 'web' } %}
+        </div>
+        <div class="head-content header-mobile">
+            {% include 'base/head.html.twig' with { screenClass: 'mobile' } %}
+        </div>
         {% block body %}{% endblock %}
         {% include 'base/footer.html.twig' %}
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
         <script src="https://cdn.canvasjs.com/canvasjs.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
         <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+        <script src="js/products.js"></script>
         <script src="js/header.js"></script>
         <script src="js/home.js"></script>
     </body>

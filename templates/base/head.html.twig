@@ -1,13 +1,13 @@
 {% set bgImg = screenClass == 'web' ? 'bg-home-web.jpg' : 'bg-home-mobile.jpg' %}
-<div class="head" style="background-image: url('{{ 'images/' ~ bgImg ~ '' }}')">
+<div class="head" style="background-image: url('{{ 'images/app/' ~ bgImg ~ '' }}')">
     <div class="bg-trans">
         <div class="v-center trans-content text-center">
-            <h1 class="title">Numérisez votre quotien <i class="fa-solid fa-star"></i></h1>
+            <h1 class="title">Numérisez votre quotidien <i class="fa-solid fa-star"></i></h1>
             <p>
                 CRM, ERP, site internet,... Imaginez un outil de travail parfaitement
                 adapté à votre besoin et nous vous aidons à le mettre en place.
             </p>
-            <a href="{{ globals.host }}#commande">
+            <a href="#commande">
                 <button type="button" class="btn btn-light btn-cmd">Passez votre commande</button>
             </a>
         </div>

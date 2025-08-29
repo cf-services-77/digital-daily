@@ -1,223 +1,146 @@
-.head-content {
-    width: 100%;
-}
-
-.head {
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
-.bg-trans {
-    position: relative;
-    background-color: rgba(2, 30, 74, 0.7);
-}
-
-.trans-content {
-    margin: 0 auto;
-}
-
-.title {
-    text-align: center;
-    color: rgba(250, 250, 250, 0.8);
-}
-
-.title i {
-    font-size: 65px;
-    color: transparent;
-    background-clip: text; /* Support partiel sur Firefox */
-    background: linear-gradient(90deg, rgba(199, 217, 81, 0.8), rgba(241, 99, 11, 0.8));
-    -webkit-background-clip: text; /* Nécessaire pour Webkit (Chrome, Safari) */
-    -webkit-text-fill-color: transparent; /* Rend le texte transparent */
-}
-
-.bg-trans p {
-    margin: 30px 0;
-    text-align: center;
-    color: rgba(250, 250, 250, 0.8);
-}
-
-.btn-cmd {
-    font-size: 25px;
-    padding: 8px 15px;
-}
-
-.about-text-container {
+#home-app .about-text-container {
     height: 100%;
     position: relative;
 }
 
-.about .canva {
+#home-app .about .canva {
     margin: 30px 0 80px 0;
 }
 
-.contact-img {
+#home-app .contact-img {
     width: 400px;
     margin: 0 auto;
 }
 
-.contact-img img {
+#home-app .contact-img img {
     width: 100%;
 }
 
-.contact-content .form {
+#home-app .contact-content .form {
     padding: 50px;
 }
 
 @media screen and (min-width: 1400px) {
-    .head,
-    .bg-trans {
-        height: 800px;
-    }
-    .trans-content {
-        width: 65%;
-    }
-    .title {
-        font-size: 90px;
-    }
-    .bg-trans p {
-        font-size: 35px;
-    }
-    .btn-cmd {
-        font-size: 25px;
-        padding: 8px 15px;
-    }
-    .services {
+    #home-app .services {
         padding: 100px 6%;
     }
-    .service-item {
+    #home-app .service-item {
         width: 600px;
         height: 500px;
     }
-    .services h1 {
+    #home-app .services h1 {
         margin-bottom: 70px;
     }
     .about-title,
     .services h1 span,
-    .contact-container h1 {
+    #home-app .contact-container h1 {
         padding: 15px 30px;
     }
-    .about-content {
+    #home-app .about-content {
         padding: 0 6%;
         background-color: #20baf7;
     }
-    .about-text-container {
+    #home-app .about-text-container {
         padding: 50px 0;
     }
-    .about-text {
+    #home-app .about-text {
         padding: 50px;
         border-radius: 15px;
     }
-    .contact-container {
+    #home-app .contact-container {
         font-size: 22px;
         padding: 100px 10%;
     }
-    .form-group {
+    #home-app .form-group {
         margin-top: 15px;
     }
-    .form-group input {
+    #home-app .form-group input {
         height: 50px;
         padding: 0 1.25rem;
     }
-    .form-group textarea {
+    #home-app .form-group textarea {
         font-size: 22px;
         padding: 1.25rem;
     }
-    .form-group input {
+    #home-app .form-group input {
         font-size: 22px;
     }
-    .form-group input::placeholder {
+    #home-app .form-group input::placeholder {
         font: 1.25rem/3 sans-serif;
     }
 }
 
 @media (max-width: 1400px) {
-    .head,
-    .bg-trans {
-        height: 900px;
-    }
-    .trans-content {
-        width: 80%;
-    }
-    .title {
-        font-size: 100px;
-    }
-    .bg-trans p {
-        font-size: 45px;
-    }
-    .btn-cmd {
-        font-size: 45px;
-        padding: 15px 30px;
-    }
-    .services {
+    #home-app .services {
         padding: 0 0 150px 0;
     }
-    .services .col-sm-6 {
+    #home-app .services .col-sm-6 {
         width: 100%;
         margin-top: 150px;
     }
-    .services h1 {
+    #home-app .services h1 {
         margin-bottom: 100px;
     }
     .about-title,
     .services h1 span,
-    .contact-container h1 {
+    #home-app .contact-container h1 {
         font-size: 55px;
         padding: 30px 60px;
     }
-    .service-item {
+    #home-app .service-item {
         width: 80%;
         height: 600px;
     }
-    .about .col-sm-6 {
+    #home-app .about .col-sm-6 {
         width: 100%;
     }
-    .about .col-sm-6:first-child {
+    #home-app .about .col-sm-6:first-child {
         padding-top: 50px;
         background-color: #20baf7;
     }
-    .about-text {
+    #home-app .about-text {
         padding: 100px 50px;
     }
-    .contact-container {
+    #home-app .contact-container {
         font-size: 35px;
         padding: 100px 50px;
     }
-    .contact-content .form {
+    #home-app .contact-content .form {
         margin-top: 100px;
     }
-    .form-group {
+    #home-app .form-group {
         margin-top: 30px;
     }
-    .form-group input {
+    #home-app .form-group input {
         height: 100px;
         padding: 0 2.5rem;
     }
-    .form-group textarea {
+    #home-app .form-group textarea {
         font-size: 35px;
         padding: 2.5rem;
     }
-    .form-group input {
+    #home-app .form-group input {
         font-size: 35px;
     }
-    .form-group input::placeholder {
+    #home-app .form-group input::placeholder {
         font: 2.5rem/3 sans-serif;
     }
-    .col-contact {
+    #home-app .col-contact {
         width: 100%;
     }
 }
 
-.services h1 {
+#home-app .services h1 {
     color: #08417a;
     text-align: center;
 }
 
-.services h1 span {
+#home-app .services h1 span {
     border-radius: 10px;
     background-color: rgba(172, 211, 237, 0.2);
 }
 
-.contact-container h1 {
+#home-app .contact-container h1 {
     color: #08417a;
     width: fit-content;
     border-radius: 10px;
@@ -225,18 +148,18 @@
     background-color: rgba(172, 211, 237, 0.2);
 }
 
-.service-item {
+#home-app .service-item {
     margin: 0 auto;
     border-radius: 10px;
     background-size: cover;
     background-repeat: no-repeat;
 }
 
-.about {
+#home-app .about {
     padding: 50px 0 0 0;
 }
 
-.about-title {
+#home-app .about-title {
     color: #08417a;
     width: fit-content;
     border-radius: 10px;
@@ -244,12 +167,12 @@
     background-color: rgba(172, 211, 237, 0.2);
 }
 
-.profile {
+#home-app .profile {
     width: 500px;
     margin: 0 auto;
     padding-top: 50px;
 }
 
-.profile img {
+#home-app .profile img {
     width: 100%;
 }

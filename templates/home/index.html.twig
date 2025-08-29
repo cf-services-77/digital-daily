@@ -2,20 +2,14 @@
 {% block title %}DIGITAL Daily{% endblock %}
 {% block body %}
 <section id="home-app">
-    <div class="head-content header-web">
-        {% include 'home/head.html.twig' with { screenClass: 'web' } %}
-    </div>
-    <div class="head-content header-mobile">
-        {% include 'home/head.html.twig' with { screenClass: 'mobile' } %}
-    </div>
     <div class="services bg-light">
         <div class="row">
             <div class="col-sm-6">
                 <h1>
                     <span>Dernière réalisation</span>
                 </h1>
-                <a href="#">
-                    <div class="service-item" style="background-image: url('{{ 'images/last-app.jpg' }}');">
+                <a href="{{ path('app_products_erp_transport') }}">
+                    <div class="service-item" style="background-image: url('{{ 'images/app/last-app.jpg' }}');">
                 
                     </div>
                 </a>
@@ -25,7 +19,7 @@
                     <span>Application sur-mesure</span>
                 </h1>
                 <a href="#">
-                    <div class="service-item" style="background-image: url('{{ 'images/service.jpg' }}');">
+                    <div class="service-item" style="background-image: url('{{ 'images/app/service.jpg' }}');">
                 
                     </div>
                 </a>
@@ -38,7 +32,7 @@
             <div class="row">
                 <div class="col-sm-6" style="position: relative;">
                     <div class="profile v-bottom">
-                        <img src="images/profile.png">
+                        <img src="images/app/profile.png">
                     </div>
                 </div>
                 <div class="col-sm-6">
@@ -47,7 +41,7 @@
                             <div class="canva">
                                 <div id="chartContainer" style="height: 400px; width: 100%; font-size:30px;"></div>
                             </div>
-                            <h1>Title here please !</h1>
+                            <h1>Ingénieur Développeur Applicatif</h1>
                             <p>
                                 Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
                                 Suscipit minima, architecto animi officia nulla totam 
@@ -74,7 +68,7 @@
         <div class="contact-content row">
             <div class="col-sm-5 col-contact" style="position: relative;">
                 <div class="contact-img v-center">
-                    <img src="images/contact.png">
+                    <img src="images/app/contact.png">
                 </div>
             </div>
             <div class="col-sm-7 col-contact">

@@ -2,11 +2,11 @@
     <div class="logo v-center">
         <a href="{{ path('app_home') }}">
             <div class="header-web">
-                <img class="logo-trans none" src="images/logo-trans.png">
-                <img class="logo-white none" src="images/logo-white.png">
+                <img class="logo-trans none" src="images/app/logo-trans.png">
+                <img class="logo-white none" src="images/app/logo-white.png">
             </div>
             <div class="header-mobile">
-                <img src="images/logo-white.png">
+                <img src="images/app/logo-white.png">
             </div>
         </a>
     </div>
@@ -16,18 +16,18 @@
                 <a href="{{ path('app_home') }}">Accueil</a>
             </li>
             <li>
-                <a href="#">Produits</a>
+                <a href="{{ path('app_products') }}">Produits</a>
             </li>
             <li>
-                <a href="#">Services</a>
+                <a href="{{ path('app_services') }}">Services</a>
             </li>
             <li>
-                <a href="#">Portfolio</a>
+                <a href="{{ path('app_portfolio') }}">Portfolio</a>
             </li>
         </ul>
     </div>
     <div class="contact contact-trans v-center header-web">
-        <a href="{{ globals.host }}#commande">
+        <a href="{{ currentPath != '/' ? globals.host : '' }}#commande">
             <span>Nous contacter</span>
         </a>
     </div>
@@ -42,16 +42,16 @@
             <a href="{{ path('app_home') }}">Accueil</a>
         </li>
         <li>
-            <a href="#">Produits</a>
+            <a href="{{ path('app_products') }}">Produits</a>
         </li>
         <li>
-            <a href="#">Services</a>
+            <a href="{{ path('app_services') }}">Services</a>
         </li>
         <li>
-            <a href="#">Portfolio</a>
+            <a href="{{ path('app_portfolio') }}">Portfolio</a>
         </li>
         <li>
-            <a href="{{ globals.host }}#commande">Nous contacter</a>
+            <a href="{{ currentPath != '/' ? globals.host : '' }}#commande">Nous contacter</a>
         </li>
     </ul>
 </div>

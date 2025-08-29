@@ -32,17 +32,17 @@
     margin-right: 30px;
 }
 
-.references {
+#footer-app .references {
     color: #95a8ad;
 }
 
-.references ul {
+#footer-app .references ul {
     margin: 0;
     padding: 30px;
     list-style-type: none;
 }
 
-.references li {
+#footer-app .references li {
     margin-bottom: 10px;
 }
 
@@ -53,19 +53,19 @@
 }
 
 @media screen and (min-width: 1400px) {
-    .references {
+    #footer-app .references {
         padding: 40px 5%;
     }
-    .references h1 {
+    #footer-app .references h1 {
         font-size: 50px;
     }
-    .references li {
+    #footer-app .references li {
         font-size: 22px;
     }
 }
 
 @media (max-width: 1400px) {
-    .text-center-dd {
+    #footer-app .text-center-footer {
         text-align: center !important;
     }
     #footer-app .content > .col-sm-6 {
@@ -75,18 +75,18 @@
         text-align: center;
         margin: 40px auto 10px auto;
     }
-    .references {
+    #footer-app .references {
         margin-top: 100px;
     }
-    .references h1 {
+    #footer-app .references h1 {
         font-size: 60px;
         text-align: center;
     }
-    .references ul {
+    #footer-app .references ul {
         margin: 0 auto;
         width: fit-content;
     }
-    .references li {
+    #footer-app .references li {
         font-size: 30px;
     }
     #footer-app .bottom {

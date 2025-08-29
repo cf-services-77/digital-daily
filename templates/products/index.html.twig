@@ -1,0 +1,22 @@
+{% extends 'base/index.html.twig' %}
+{% block title %}Nos produits{% endblock %}
+{% block body %}
+<section id="products-app">
+    <div class="head-content header-web">
+        {% include 'base/head.html.twig' with { screenClass: 'web' } %}
+    </div>
+    <div class="head-content header-mobile">
+        {% include 'base/head.html.twig' with { screenClass: 'mobile' } %}
+    </div>
+    <div class="products-container">
+        <a href="{{ path('app_products_erp_transport') }}" style="text-decoration: none;">
+            <div class="product-item bg-white shadow-sm">
+                <h1>ERP-TRANSPORT</h1>
+                <p>
+                    Application de gestion de tournées pour un transporteur.
+                </p>
+            </div>
+        </a>
+    </div>
+</section>
+{% endblock %}
