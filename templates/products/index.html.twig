@@ -2,12 +2,6 @@
 {% block title %}Nos produits{% endblock %}
 {% block body %}
 <section id="products-app">
-    <div class="head-content header-web">
-        {% include 'base/head.html.twig' with { screenClass: 'web' } %}
-    </div>
-    <div class="head-content header-mobile">
-        {% include 'base/head.html.twig' with { screenClass: 'mobile' } %}
-    </div>
     <div class="products-container">
         <a href="{{ path('app_products_erp_transport') }}" style="text-decoration: none;">
             <div class="product-item bg-white shadow-sm">

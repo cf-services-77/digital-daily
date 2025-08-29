@@ -17,6 +17,12 @@
     background-color: rgba(172, 211, 237, 0.2);
 }
 
+#products-app .product-item p {
+    font-size: 25px;
+    color: #03284d;
+    margin-top: 30px;
+}
+
 #erp-transport-app {
     padding: 100px 0;
 }
@@ -53,17 +59,18 @@
     #products-app .product-item h1 {
         padding: 20px 40px;
     }
-    #products-app .product-item p {
-        font-size: 25px;
-        color: #03284d;
-        margin-top: 30px;
-    }
     #erp-transport-app p {
         font-size: 22px;
     }
 }
 
 @media (max-width: 1400px) {
+    #products-app .products-container {
+        padding: 100px 50px;
+    }
+    #products-app .product-item h1 {
+        padding: 30px 50px;
+    }
     #erp-transport-app .container {
         max-width: 90%;
     }
