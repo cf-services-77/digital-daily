@@ -27,7 +27,7 @@
         </ul>
     </div>
     <div class="contact contact-trans v-center header-web">
-        <a href="{{ currentPath != '/' ? globals.host : '' }}#commande">
+        <a href="{{ path('app_home') }}#commande">
             <span>Nous contacter</span>
         </a>
     </div>
@@ -51,7 +51,7 @@
             <a href="{{ path('app_portfolio') }}">Portfolio</a>
         </li>
         <li>
-            <a href="{{ currentPath != '/' ? globals.host : '' }}#commande">Nous contacter</a>
+            <a href="{{ path('app_home') }}#commande">Nous contacter</a>
         </li>
     </ul>
 </div>
