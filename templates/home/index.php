@@ -1,6 +1,5 @@
-{% extends 'base/index.html.twig' %}
-{% block title %}DIGITAL Daily{% endblock %}
-{% block body %}
+<?php $key = 'home'; $title = 'DIGITAL Daily'; include '../base/header.php'; ?>
+
 <section id="home-app">
     <div class="services bg-light">
         <div class="row">
@@ -9,7 +8,7 @@
                     <span>Dernière réalisation</span>
                 </h1>
                 <a href="{{ path('app_products_erp_transport') }}">
-                    <div class="service-item" style="background-image: url('{{ 'images/app/last-app.jpg' }}');">
+                    <div class="service-item" style="background-image: url('../../public/images/app/last-app.jpg');">
                 
                     </div>
                 </a>
@@ -19,7 +18,7 @@
                     <span>Application sur-mesure</span>
                 </h1>
                 <a href="#">
-                    <div class="service-item" style="background-image: url('{{ 'images/app/service.jpg' }}');">
+                    <div class="service-item" style="background-image: url('../../public/images/app/service.jpg');">
                 
                     </div>
                 </a>
@@ -32,7 +31,7 @@
             <div class="row">
                 <div class="col-sm-6" style="position: relative;">
                     <div class="profile v-bottom">
-                        <img src="images/app/profile.png">
+                        <img src="../../public/images/app/profile.png">
                     </div>
                 </div>
                 <div class="col-sm-6">
@@ -68,7 +67,7 @@
         <div class="contact-content row">
             <div class="col-sm-5 col-contact" style="position: relative;">
                 <div class="contact-img v-center">
-                    <img src="images/app/contact.png">
+                    <img src="../../public/images/app/contact.png">
                 </div>
             </div>
             <div class="col-sm-7 col-contact">
@@ -117,4 +116,5 @@
         </div>
     </div>
 </section>
-{% endblock %}
+
+<?php include '../base/footer.php'; ?>

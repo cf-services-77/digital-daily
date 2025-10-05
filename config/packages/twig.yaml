@@ -1,8 +1,0 @@
-twig:
-    file_name_pattern: '*.twig'
-    globals:
-        globals: '@App\Service\GlobalService'
-
-when@test:
-    twig:
-        strict_variables: true
