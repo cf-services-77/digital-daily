@@ -3,7 +3,7 @@
                 <div class="col-sm-6 text-center-footer">
                     <a href="../home/">
                         <div class="logo-footer text-center-footer">
-                            <img src="../../public/images/app/logo-trans.png">
+                            <img src="<?= $host ?>/public/images/app/logo-trans.png">
                         </div>
                     </a>
                     <p>
@@ -15,16 +15,16 @@
                     <hr class="line-footer">
                     <div class="icons">
                         <a href="https://www.linkedin.com/in/hassane-toiwilou-6b13811a0?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">
-                            <img src="../../public/images/app/linkedin.png">
+                            <img src="<?= $host ?>/public/images/app/linkedin.png">
                         </a>
                         <a href="#">
-                            <img src="../../public/images/app/twitter.png">
+                            <img src="<?= $host ?>/public/images/app/twitter.png">
                         </a>
                         <a href="#">
-                            <img src="../../public/images/app/facebook.png">
+                            <img src="<?= $host ?>/public/images/app/facebook.png">
                         </a>
                         <a href="#">
-                            <img src="../../public/images/app/instagram.png">
+                            <img src="<?= $host ?>/public/images/app/instagram.png">
                         </a>
                     </div>
                 </div>
@@ -78,7 +78,7 @@
         <script src="https://cdn.canvasjs.com/canvasjs.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
         <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-        <script src="../../public/js/<?= $key ?>.js"></script>
-        <script src="../../public/js/header.js"></script>
+        <script src="<?= $host ?>/public/js/<?= $key ?>.js"></script>
+        <script src="<?= $host ?>/public/js/header.js"></script>
     </body>
 </html>

@@ -1,3 +1,5 @@
+<?php include '../../env.php'; $host = $http . '://' . $_SERVER['HTTP_HOST'] . '/digital-daily' ?>
+
 <!DOCTYPE html>
 <html lang="fr">
     <head>
@@ -6,22 +8,22 @@
         <title><?= $title ?></title>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
-        <link rel="stylesheet" href="../../public/css/<?= $key ?>.css">
-        <link rel="stylesheet" href="../../public/css/footer.css">
-        <link rel="stylesheet" href="../../public/css/header.css">
-        <link rel="stylesheet" href="../../public/css/head.css">
-        <link rel="stylesheet" href="../../public/css/app.css">
+        <link rel="stylesheet" href="<?= $host ?>/public/css/<?= $key ?>.css">
+        <link rel="stylesheet" href="<?= $host ?>/public/css/footer.css">
+        <link rel="stylesheet" href="<?= $host ?>/public/css/header.css">
+        <link rel="stylesheet" href="<?= $host ?>/public/css/head.css">
+        <link rel="stylesheet" href="<?= $host ?>/public/css/app.css">
     </head>
     <body>
         <section id="header-app">
             <div class="logo v-center">
                 <a href="../home/">
                     <div class="header-web">
-                        <img class="logo-trans none" src="../../public/images/app/logo-trans.png">
-                        <img class="logo-white none" src="../../public/images/app/logo-white.png">
+                        <img class="logo-trans none" src="<?= $host ?>/public/images/app/logo-trans.png">
+                        <img class="logo-white none" src="<?= $host ?>/public/images/app/logo-white.png">
                     </div>
                     <div class="header-mobile">
-                        <img src="../../public/images/app/logo-white.png">
+                        <img src="<?= $host ?>/public/images/app/logo-white.png">
                     </div>
                 </a>
             </div>
