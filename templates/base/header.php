@@ -21,8 +21,8 @@
             <div class="logo v-center">
                 <a href="../home/">
                     <div class="header-web">
-                        <img class="logo-trans none" src="<?= $host ?>public/images/app/logo-trans.png">
-                        <img class="logo-white none" src="<?= $host ?>public/images/app/logo-white.png">
+                        <img class="logo-trans none" src="<?= $host ?>/public/images/app/logo-trans.png">
+                        <img class="logo-white none" src="<?= $host ?>/public/images/app/logo-white.png">
                     </div>
                     <div class="header-mobile">
                         <img src="<?= $host ?>/public/images/app/logo-white.png">
