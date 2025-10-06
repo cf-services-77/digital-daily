@@ -1,4 +1,4 @@
-<?php include '../../env.php'; $host = $http . '://' . $_SERVER['HTTP_HOST'] . '/digital-daily' ?>
+<?php include '../../env.php'; $imgPath = $_SERVER['DOCUMENT_ROOT'] . '/digital-daily/public/images/' ?>
 
 <!DOCTYPE html>
 <html lang="fr">
@@ -21,8 +21,8 @@
             <div class="logo v-center">
                 <a href="../home/">
                     <div class="header-web">
-                        <img class="logo-trans none" src="<?= $host ?>/public/images/app/logo-trans.png">
-                        <img class="logo-white none" src="<?= $host ?>/public/images/app/logo-white.png">
+                        <img class="logo-trans none" src="<?= $host ?>public/images/app/logo-trans.png">
+                        <img class="logo-white none" src="<?= $host ?>public/images/app/logo-white.png">
                     </div>
                     <div class="header-mobile">
                         <img src="<?= $host ?>/public/images/app/logo-white.png">
