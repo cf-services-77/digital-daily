@@ -8,11 +8,13 @@
         <title><?= $title ?></title>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
-        <link rel="stylesheet" href="<?= $host ?>/public/css/<?= $key ?>.css">
-        <link rel="stylesheet" href="<?= $host ?>/public/css/footer.css">
-        <link rel="stylesheet" href="<?= $host ?>/public/css/header.css">
-        <link rel="stylesheet" href="<?= $host ?>/public/css/head.css">
-        <link rel="stylesheet" href="<?= $host ?>/public/css/app.css">
+        <?php
+            $keys = ['footer', 'header', 'head', 'app', $key];
+
+            for ($i = 0; $i < count($keys); $i++) {
+                include '../../public/css/' . $keys[$i] . '.php';
+            }
+        ?>
     </head>
     <body>
         <section id="header-app">
