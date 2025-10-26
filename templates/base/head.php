@@ -1,5 +1,5 @@
-<?php $bgImg = $screen == 'web' ? 'bg-home-web.jpg' : 'bg-home-mobile.jpg'; ?>
-<div class="head" style="background-image: url('../../public/images/app/<?= $bgImg ?>')">
+<?php $bgImg = $screen == 'web' ? $bgHomeWeb : $bgHomeMobile ?>
+<div class="head" style="background-image: url('<?= $bgImg ?>')">
     <div class="bg-trans">
         <div class="v-center trans-content text-center">
             <h1 class="title">Numérisez votre quotidien <i class="fa-solid fa-star"></i></h1>

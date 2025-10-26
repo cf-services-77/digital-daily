@@ -1,4 +1,4 @@
-<?php $key = 'home'; $title = 'DIGITAL Daily'; include '../base/header.php'; ?>
+<?php $key = 'home'; $title = 'DIGITAL Daily'; ?>
 
 <section id="home-app">
     <div class="services bg-light">
@@ -8,7 +8,7 @@
                     <span>Dernière réalisation</span>
                 </h1>
                 <a href="{{ path('app_products_erp_transport') }}">
-                    <div class="service-item" style="background-image: url('<?= $host ?>/public/images/app/last-app.jpg');">
+                    <div class="service-item" style="background-image: url('<?= $lastApp ?>');">
                 
                     </div>
                 </a>
@@ -18,7 +18,7 @@
                     <span>Application sur-mesure</span>
                 </h1>
                 <a href="#">
-                    <div class="service-item" style="background-image: url('<?= $host ?>/public/images/app/service.jpg');">
+                    <div class="service-item" style="background-image: url('<?= $service ?>');">
                 
                     </div>
                 </a>
@@ -31,7 +31,7 @@
             <div class="row">
                 <div class="col-sm-6" style="position: relative;">
                     <div class="profile v-bottom">
-                        <img src="<?= $host ?>/public/images/app/profile.png">
+                        <img src="<?= $profile ?>">
                     </div>
                 </div>
                 <div class="col-sm-6">
@@ -67,7 +67,7 @@
         <div class="contact-content row">
             <div class="col-sm-5 col-contact" style="position: relative;">
                 <div class="contact-img v-center">
-                    <img src="<?= $host ?>/public/images/app/contact.png">
+                    <img src="<?= $contact ?>">
                 </div>
             </div>
             <div class="col-sm-7 col-contact">
@@ -116,5 +116,3 @@
         </div>
     </div>
 </section>
-
-<?php include '../base/footer.php'; ?>

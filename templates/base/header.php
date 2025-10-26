@@ -1,4 +1,4 @@
-<?php include '../../env.php'; $imgPath = $_SERVER['DOCUMENT_ROOT'] . '/digital-daily/public/images/' ?>
+<?php include '../../env.php'; ?>
 
 <!DOCTYPE html>
 <html lang="fr">
@@ -11,9 +11,9 @@
         <?php
             $keys = ['footer', 'header', 'head', 'app', $key];
 
-            for ($i = 0; $i < count($keys); $i++) {
-                include '../../public/css/' . $keys[$i] . '.php';
-            }
+            //for ($i = 0; $i < count($keys); $i++) {
+                include '../../public/css/haeder.php';
+            //}
         ?>
     </head>
     <body>
@@ -21,11 +21,11 @@
             <div class="logo v-center">
                 <a href="../home/">
                     <div class="header-web">
-                        <img class="logo-trans none" src="<?= $host ?>/public/images/app/logo-trans.png">
-                        <img class="logo-white none" src="<?= $host ?>/public/images/app/logo-white.png">
+                        <img class="logo-trans none" src="<?= $logoTrans ?>">
+                        <img class="logo-white none" src="<?= $logoWhite ?>">
                     </div>
                     <div class="header-mobile">
-                        <img src="<?= $host ?>/public/images/app/logo-white.png">
+                        <img src="<?= $logoWhite ?>">
                     </div>
                 </a>
             </div>
@@ -75,8 +75,8 @@
             </ul>
         </div>
         <div class="head-content header-web">
-            <?php $screen = 'web'; include '../base/head.php'; ?>
+            <?php $screen = 'web'; include 'base/head.php'; ?>
         </div>
         <div class="head-content header-mobile">
-            <?php $screen = 'mobile'; include '../base/head.php'; ?>
+            <?php $screen = 'mobile'; include 'base/head.php'; ?>
         </div>

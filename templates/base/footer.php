@@ -3,7 +3,7 @@
                 <div class="col-sm-6 text-center-footer">
                     <a href="<?= $host ?>/templates/home/">
                         <div class="logo-footer text-center-footer">
-                            <img src="<?= $host ?>/public/images/app/logo-trans.png">
+                            <img src="<?= $logoTrans ?>">
                         </div>
                     </a>
                     <p>
@@ -15,16 +15,16 @@
                     <hr class="line-footer">
                     <div class="icons">
                         <a href="https://www.linkedin.com/in/hassane-toiwilou-6b13811a0?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">
-                            <img src="../../public/images/app/linkedin.png">
+                            <img src="<?= $linkedin ?>">
                         </a>
                         <a href="#">
-                            <img src="../../public/images/app/twitter.png">
+                            <img src="<?= $twitter ?>">
                         </a>
                         <a href="#">
-                            <img src="../../public/images/app/facebook.png">
+                            <img src="<?= $facebook ?>">
                         </a>
                         <a href="#">
-                            <img src="../../public/images/app/instagram.png">
+                            <img src="<?= $instagram ?>">
                         </a>
                     </div>
                 </div>
