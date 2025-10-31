@@ -78,7 +78,10 @@
         <script src="https://cdn.canvasjs.com/canvasjs.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
         <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-        <script src="<?= $host ?>/public/js/<?= $key ?>.js"></script>
-        <script src="<?= $host ?>/public/js/header.js"></script>
+        <?php
+            foreach ($jsPaths as $path) { ?>
+                <script src="<?= $path ?>"></script>
+            <?php }
+        ?>
     </body>
 </html>
