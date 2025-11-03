@@ -1,3 +1,7 @@
+.hover:hover {
+    cursor: pointer;
+}
+
 .none {
     display: none;
 }

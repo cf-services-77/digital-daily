@@ -1,17 +1,13 @@
         <section id="footer-app">
             <div class="content row">
                 <div class="col-sm-6 text-center-footer">
-                    <a href="<?= $host ?>/templates/home/">
-                        <div class="logo-footer text-center-footer">
-                            <img src="<?= $logoTrans ?>">
-                        </div>
-                    </a>
+                    <div class="logo-footer logo-footer-cls hover text-center-footer" data-link="home">
+                        <img src="<?= $logoTrans ?>">
+                    </div>
                     <p>
                         Optimisez votre travail avec une bonne intégrité des données, laissez nous un message.
                     </p>
-                    <a href="../home/#commande">
-                        <button type="button" class="btn btn-primary btn-cmd">Prendre contact</button>
-                    </a>
+                    <button type="button" class="btn btn-primary btn-cmd contact-footer-cls" data-link="home">Prendre contact</button>
                     <hr class="line-footer">
                     <div class="icons">
                         <a href="https://www.linkedin.com/in/hassane-toiwilou-6b13811a0?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">

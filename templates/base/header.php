@@ -1,5 +1,3 @@
-<?php include 'env.php' ?>
-
 <!DOCTYPE html>
 <html lang="fr">
     <head>
@@ -16,37 +14,33 @@
     </head>
     <body>
         <section id="header-app">
-            <div class="logo v-center">
-                <a href="../home/">
-                    <div class="header-web">
-                        <img class="logo-trans none" src="<?= $logoTrans ?>">
-                        <img class="logo-white none" src="<?= $logoWhite ?>">
-                    </div>
-                    <div class="header-mobile">
-                        <img src="<?= $logoWhite ?>">
-                    </div>
-                </a>
+            <div class="logo v-center logo-header-cls hover hover" data-link="home">
+                <div class="header-web">
+                    <img class="logo-trans none" src="<?= $logoTrans ?>">
+                    <img class="logo-white none" src="<?= $logoWhite ?>">
+                </div>
+                <div class="header-mobile">
+                    <img src="<?= $logoWhite ?>">
+                </div>
             </div>
             <div class="items items-trans header-web">
                 <ul class="v-center">
                     <li>
-                        <a href="../home/">Accueil</a>
+                        <span class="home-cls hover" data-link="home">Accueil</span>
                     </li>
                     <li>
-                        <a href="../product/">Produits</a>
+                        <span class="products-cls hover" data-link="products">Produits</span>
                     </li>
                     <li>
-                        <a href="{{ path('app_services') }}">Services</a>
+                        <span class="service-cls hover" data-link="service">Services</span>
                     </li>
                     <li>
-                        <a href="{{ path('app_portfolio') }}">Portfolio</a>
+                        <span class="portfolio-cls hover" data-link="portfolio">Portfolio</span>
                     </li>
                 </ul>
             </div>
             <div class="contact contact-trans v-center header-web">
-                <a href="{{ path('app_home') }}#commande">
-                    <span>Nous contacter</span>
-                </a>
+                <span class="contact-header-cls hover" data-link="home">Nous contacter</span>
             </div>
             <div class="burger v-center header-mobile">
                 <i class="fa-solid fa-bars shadow-sm bg-light"></i>

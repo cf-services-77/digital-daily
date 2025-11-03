@@ -1,6 +1,12 @@
 <?php
 
     /**
+     * ENV LOCAL FILE
+     */
+    include 'env.php';
+
+
+    /**
      * APP KEYS
      */
     $keys = ['app', 'head', 'home', 'header', 'footer', 'products'];
@@ -70,9 +76,25 @@
     $headPath = 'templates/base/head.php';
 
 
+    /**
+     * APP HEADER
+     */
     include 'templates/base/header.php';
 
-    include 'templates/home/index.php';
 
+    /**
+     * APP PAGES
+     */
+    include 'templates/home/index.php';
+    include 'templates/product/index.php';
+    include 'templates/product/erp-transport.php';
+    include 'templates/service/index.php';
+    include 'templates/portfolio/index.php';
+
+
+    /**
+     * APP FOOTER
+     */
     include 'templates/base/footer.php';
+
 ?>

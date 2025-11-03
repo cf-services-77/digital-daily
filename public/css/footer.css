@@ -4,6 +4,10 @@
     background-color: #020c25;
 }
 
+#footer-app .logo-footer {
+    width: fit-content;
+}
+
 #footer-app .content p {
     width: 85%;
     font-size: 30px;

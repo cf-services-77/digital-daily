@@ -1,5 +1,3 @@
-<?php $key = 'home'; $title = 'DIGITAL Daily'; ?>
-
 <section id="home-app">
     <div class="services bg-light">
         <div class="row">
@@ -7,21 +5,17 @@
                 <h1>
                     <span>Dernière réalisation</span>
                 </h1>
-                <a href="{{ path('app_products_erp_transport') }}">
-                    <div class="service-item" style="background-image: url('<?= $lastApp ?>');">
-                
-                    </div>
-                </a>
+                <div class="service-item last-app-cls hover" data-link="<?= $lastAppKey ?>" style="background-image: url('<?= $lastApp ?>');">
+            
+                </div>
             </div>
             <div class="col-sm-6">
                 <h1>
                     <span>Application sur-mesure</span>
                 </h1>
-                <a href="#">
-                    <div class="service-item" style="background-image: url('<?= $service ?>');">
-                
-                    </div>
-                </a>
+                <div class="service-item app-custom-cls hover" data-link="service" style="background-image: url('<?= $service ?>');">
+            
+                </div>
             </div>
         </div>
     </div>
@@ -53,9 +47,7 @@
                                 dolor doloremque. Quas libero deleniti distinctio 
                                 minus dolorem
                             </p>
-                            <a href="#">
-                                <button class="btn btn-secondary">En savoir plus</button>
-                            </a>
+                            <button class="btn btn-secondary learn-more-cls" data-link="portfolio">En savoir plus</button>
                         </div>
                     </div>
                 </div>
