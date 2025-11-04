@@ -1,6 +1,13 @@
 <?php
 
     /**
+     * START SESSION
+     */
+    session_start();
+    $_SESSION['invalid'] = null;
+    
+
+    /**
      * ENV LOCAL FILE
      */
     include 'env.php';
