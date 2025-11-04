@@ -64,7 +64,7 @@
             </div>
             <div class="col-sm-7 col-contact">
                 <div class="form bg-white shadow-sm">
-                    <form action="{{ path('app_message_send') }}" method="POST">
+                    <form action="<?= $contactFormPath ?>" method="POST">
                         <div class="form-check form-check-inline" style="margin-right: 100px;">
                             <input class="form-check-input" type="radio" name="gender" id="inlineRadioMale" value="Monsieur" checked>
                             <label class="form-check-label" for="inlineRadioMale">Monsieur</label>

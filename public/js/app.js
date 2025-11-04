@@ -1,3 +1,5 @@
+const commande = document.getElementById('commande');
+
 const itemsNav = [
     'logo-header',
     'home',
@@ -10,34 +12,63 @@ const itemsNav = [
     'app-custom',
     'learn-more',
     'erp-transport',
+    'contact-erp-transport',
     'logo-footer',
     'contact-footer'
 ];
 
-const itemsPages = [
-    'home',
-    'products',
-    'erp-transport',
-    'service',
-    'portfolio'
-];
+const itemsPages = {
+    'home': 'DIGITAL Daily',
+    'products': 'Nos produits',
+    'erp-transport': 'ERP-TRANSPORT',
+    'service': 'Nos services',
+    'portfolio': 'PORTFOLIO',
+};
+
+const currentPage = sessionStorage.getItem('page');
+
+const setPage = (itemPage) => {
+    for (const page in itemsPages) {
+        const pageElt = document.getElementById(page + '-app');
+
+        if (itemPage == page) {
+            pageElt.classList.remove('none');
+            document.title = itemsPages[page];
+            sessionStorage.setItem('page', itemPage);
+        } else {
+            if (!pageElt.classList.contains('none')) {
+                pageElt.classList.add('none');
+            }
+        }
+    }
+};
+
+if (currentPage) {
+    setPage(currentPage);
+}
 
 for (let i = 0; i < itemsNav.length; i++) {
     const item = itemsNav[i];
     const itemElt = document.querySelector('.' + item + '-cls');
     
     itemElt.addEventListener('click', () => {
-        for (let j = 0; j < itemsPages.length; j++) {
-            const page = itemsPages[j];
-            const pageElt = document.getElementById(page + '-app');
+        setPage(itemElt.dataset.link);
 
-            if (itemElt.dataset.link == page) {
-                pageElt.classList.remove('none');
-            } else {
-                if (!pageElt.classList.contains('none')) {
-                    pageElt.classList.add('none');
-                }
-            }
+        if (item.indexOf('contact') !== -1) {
+            commande.scrollIntoView({
+                behavior: 'smooth',
+                block: 'start'
+            });
+        } else {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
         }
     });
 }
+
+setTimeout(() => {
+    document.getElementById('loader').style.display = 'none';
+    document.getElementById('content').style.display = 'block';
+}, 800);

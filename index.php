@@ -74,6 +74,7 @@
      * OTHER VARIABLES
      */
     $headPath = 'templates/base/head.php';
+    $contactFormPath = 'templates/home/contact.php';
 
 
     /**
