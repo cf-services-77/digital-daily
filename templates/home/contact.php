@@ -21,7 +21,7 @@
      * DB CONNECTION
      */
     try {
-        $pdo = new PDO("mysql:host=$servername;dbname=$dbname;charset=utf8", $username, $password);
+        $pdo = new PDO("mysql:host=$servername;port=$port;dbname=$dbname;charset=utf8", $username, $password);
         $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
         
         $request = "INSERT INTO contact (gender, firstname, lastname, email, subject, message) VALUES (:gender, :firstname, :lastname, :email, :subject, :message)";
