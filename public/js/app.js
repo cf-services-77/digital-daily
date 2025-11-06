@@ -1,3 +1,4 @@
+const barDropdown = document.querySelector('.dropdown');
 const commande = document.getElementById('commande');
 
 const itemsNav = [
@@ -31,6 +32,14 @@ const itemsPages = {
     'portfolio': 'PORTFOLIO',
 };
 
+const lisNav = [
+    'mb-home',
+    'mb-products',
+    'mb-service',
+    'mb-portfolio',
+    'mb-contact'
+];
+
 const currentPage = sessionStorage.getItem('page');
 
 const setPage = (itemPage) => {
@@ -59,6 +68,10 @@ for (let i = 0; i < itemsNav.length; i++) {
     
     itemElt.addEventListener('click', () => {
         setPage(itemElt.dataset.link);
+        
+        if (!barDropdown.classList.contains('none')) {
+            barDropdown.classList.add('none');
+        }
 
         if (item.indexOf('contact') !== -1) {
             commande.scrollIntoView({
