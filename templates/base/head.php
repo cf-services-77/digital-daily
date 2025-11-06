@@ -7,7 +7,7 @@
                 CRM, ERP, site internet,... Imaginez un outil de travail parfaitement
                 adapté à votre besoin et nous vous aidons à le mettre en place.
             </p>
-            <button type="button" class="btn btn-light btn-cmd contact-head-cls" data-link="home">Passez votre commande</button>
+            <button type="button" class="btn btn-light btn-cmd contact-<?= $screen ?>-cls" data-link="home">Passez votre commande</button>
         </div>
     </div>
 </div>

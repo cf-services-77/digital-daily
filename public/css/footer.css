@@ -70,7 +70,11 @@
 
 @media (max-width: 1400px) {
     #footer-app .logo-footer {
+        width: 400px;
         margin: 0 auto;
+    }
+    #footer-app .logo-footer img {
+        width: 100%;
     }
     #footer-app .text-center-footer {
         text-align: center !important;

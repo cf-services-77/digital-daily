@@ -43,27 +43,27 @@
                 <div class="contact contact-trans v-center header-web">
                     <span class="contact-header-cls hover" data-link="home">Nous contacter</span>
                 </div>
-                <div class="burger v-center header-mobile">
+                <div class="burger v-center header-mobile hover">
                     <i class="fa-solid fa-bars shadow-sm bg-light"></i>
                 </div>
             </section>
             <div class="fake"></div>
             <div class="dropdown bg-light none">
                 <ul>
-                    <li style="border-top: 1px solid #436c84;">
-                        <a href="{{ path('app_home') }}">Accueil</a>
+                    <li class="mb-home-cls hover" data-link="home" style="border-top: 1px solid #436c84;">
+                        <span>Accueil</span>
                     </li>
-                    <li>
-                        <a href="{{ path('app_products') }}">Produits</a>
+                    <li class="mb-products-cls hover" data-link="products">
+                        <span>Produits</span>
                     </li>
-                    <li>
-                        <a href="{{ path('app_services') }}">Services</a>
+                    <li class="mb-service-cls hover" data-link="service">
+                        <span>Services</span>
                     </li>
-                    <li>
-                        <a href="{{ path('app_portfolio') }}">Portfolio</a>
+                    <li class="mb-portfolio-cls hover" data-link="portfolio">
+                        <span>Portfolio</span>
                     </li>
-                    <li>
-                        <a href="{{ path('app_home') }}#commande">Nous contacter</a>
+                    <li class="mb-contact-cls hover" data-link="home">
+                        <span>Nous contacter</span>
                     </li>
                 </ul>
             </div>
