@@ -34,20 +34,14 @@
                             <div class="canva">
                                 <div id="chartContainer" style="height: 400px; width: 100%; font-size:30px;"></div>
                             </div>
-                            <h1>Ingénieur Développeur Applicatif</h1>
-                            <p>
-                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
-                                Suscipit minima, architecto animi officia nulla totam 
-                                facere ab harum, nobis quasi, voluptas repudiandae 
-                                dolor doloremque. Quas libero deleniti distinctio 
-                                minus dolorem
-                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
-                                Suscipit minima, architecto animi officia nulla totam 
-                                facere ab harum, nobis quasi, voluptas repudiandae 
-                                dolor doloremque. Quas libero deleniti distinctio 
-                                minus dolorem
+                            <h1 class="mb-3">Ingénieur Développeur Applicatif</h1>
+                            <p class="sz-22">
+                                Après une licence de mathématiques fondamentales, j'ai choisi de continuer mon cursus en informatique 
+                                entant qu'Ingénieur Développeur Applicatif. Je travaille sur les sujets de développement  d'applications Web 
+                                avec des outils, des solutions technologiques modernes, et aussi l'exploitation dans les environnements Cloud. 
+                                Mon but est de réaliser un parcours de DevSecOps afin d'arriver au niveau d'un Architecte entreprise.
                             </p>
-                            <button class="btn btn-secondary learn-more-cls" data-link="portfolio">En savoir plus</button>
+                            <button class="btn btn-secondary learn-more-cls sz-22 mt-3" data-link="portfolio">En savoir plus</button>
                         </div>
                     </div>
                 </div>

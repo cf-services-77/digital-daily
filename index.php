@@ -16,7 +16,7 @@
     /**
      * APP KEYS
      */
-    $keys = ['app', 'head', 'home', 'header', 'footer', 'products'];
+    $keys = ['app', 'head', 'home', 'header', 'footer', 'products', 'services'];
 
 
     /**
@@ -65,16 +65,6 @@
     $leave = 'public/images/erp-transport/leave.png';
     $planning = 'public/images/erp-transport/planning.png';
     $tours = 'public/images/erp-transport/tours.png';
-
-    
-    /**
-     * IMAGE PATHS
-     */
-    $appImgPaths = [];
-
-    foreach ($appImgs as $key) {
-        $appImgPaths[$key] = '';
-    }
 
 
     /**

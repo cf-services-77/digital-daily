@@ -18,6 +18,10 @@
     display: none;
 }
 
+.sz-22 {
+    font-size: 22px;
+}
+
 .v-center {
     top: 50%;
     position: relative;
