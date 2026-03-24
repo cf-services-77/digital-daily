@@ -1,10 +1,4 @@
 <?php
-
-    /**
-     * START SESSION
-     */
-    session_start();
-    $_SESSION['invalid'] = null;
     
 
     /**
@@ -71,7 +65,6 @@
      * OTHER VARIABLES
      */
     $headPath = 'templates/base/head.php';
-    $contactFormPath = 'templates/home/contact.php';
 
 
     /**

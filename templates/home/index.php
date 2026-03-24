@@ -58,7 +58,24 @@
             </div>
             <div class="col-sm-7 col-contact">
                 <div class="form bg-white shadow-sm">
-                    <form action="<?= $contactFormPath ?>" method="POST">
+                    <form id="contactForm">
+                        <div id="companyBlock">
+                            <div class="form-check form-check-inline" style="margin-right: 100px;">
+                                <input class="form-check-input" type="radio" name="is_company" id="inlineRadioIndividual" value="Monsieur" checked>
+                                <label class="form-check-label" for="inlineRadioIndividual">Particulier</label>
+                            </div>
+                            <div class="form-check form-check-inline mb-4">
+                                <input class="form-check-input" type="radio" name="is_company" id="inlineRadioCompany" value="Madame">
+                                <label class="form-check-label" for="inlineRadioCompany">Entreprise</label>
+                            </div>
+                        </div>
+                        <div id="company" class="mb-4 none">
+                            <div class="form-group mb-4">
+                                <label for="company-input">Nom de l'entreprise <span style="color: red;">*</span></label>
+                                <input type="text" name="company" id="company-input" class="form-control" placeholder="Nom de l'entreprise">
+                            </div>
+                            <h3>Personne de contact</h3>
+                        </div>
                         <div class="form-check form-check-inline" style="margin-right: 100px;">
                             <input class="form-check-input" type="radio" name="gender" id="inlineRadioMale" value="Monsieur" checked>
                             <label class="form-check-label" for="inlineRadioMale">Monsieur</label>
@@ -97,8 +114,75 @@
                             <button type="submit" class="btn btn-success btn-cmd">Envoyer</button>
                         </div>
                     </form>
+                    <div id="message" class="mt-3"></div>
                 </div>
             </div>
         </div>
     </div>
 </section>
+<script>
+    const individualRadio = document.getElementById('inlineRadioIndividual');
+    const companyRadio = document.getElementById('inlineRadioCompany');
+    const companyInput = document.getElementById('company-input');
+    const companyBlock = document.getElementById('companyBlock');
+    const company = document.getElementById('company');
+
+    companyBlock.addEventListener('click', (e) => {        
+        if (individualRadio.contains(e.target) && individualRadio.checked) {
+            companyInput.removeAttribute('required');
+
+            if (!company.classList.contains('none')) {
+                company.classList.add('none');
+            }
+        }
+
+        if (companyRadio.contains(e.target) && companyRadio.checked) {
+            companyInput.setAttribute('required', '');
+            company.classList.remove('none');
+        }
+    });
+
+    document.getElementById('contactForm').addEventListener('submit', async function(e) {
+        e.preventDefault();
+
+        const data = {
+            is_company: !!document.getElementById('inlineRadioCompany').checked,
+            company: document.getElementById('company-input').value,
+            gender: document.getElementById('inlineRadioFemale').checked ? 'Madame' : 'Monsieur',
+            firstname: document.getElementById('firstname-input').value,
+            lastname: document.getElementById('lastname-input').value,
+            email: document.getElementById('email-input').value,
+            subject: document.getElementById('subject-input').value,
+            message: document.getElementById('message-input').value
+        };
+
+        try {
+            const response = await fetch('<?= $api ?>/api/commands', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(data)
+            });
+
+            const result = await response.json();
+
+            if (response.ok) {
+                document.getElementById('message').innerHTML =
+                    '<div class="alert alert-success">Message envoyé ✅</div>';
+            } else {
+                document.getElementById('message').innerHTML =
+                    '<div class="alert alert-danger">' + (result.message || 'Erreur') + '</div>';
+            }
+
+        } catch (error) {
+            console.error(error);
+            document.getElementById('message').innerHTML =
+                '<div class="alert alert-danger">Erreur serveur</div>';
+        }
+
+        setTimeout(() => {
+            document.getElementById('message').innerHTML = '';
+        }, 3000);
+    });
+</script>
