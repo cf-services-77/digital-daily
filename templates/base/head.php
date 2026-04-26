@@ -2,7 +2,7 @@
 <div class="head" style="background-image: url('<?= $bgImg ?>')">
     <div class="bg-trans">
         <div class="v-center trans-content text-center">
-            <h1 class="title">Numérisez votre quotidien <i class="fa-solid fa-star"></i></h1>
+            <h1 class="title">Développement d’applications web professionnelles <i class="fa-solid fa-star"></i></h1>
             <p>
                 CRM, ERP, site internet,... Imaginez un outil de travail parfaitement
                 adapté à votre besoin et nous vous aidons à le mettre en place.

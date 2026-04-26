@@ -66,7 +66,7 @@
                 const password = document.getElementById('password').value;
 
                 try {
-                    const response = await fetch('<?= $api ?>/api/login_check', {
+                    const response = await fetch('<?= $api ?>/api/login', {
                         method: 'POST',
                         headers: {
                             'Content-Type': 'application/json'
